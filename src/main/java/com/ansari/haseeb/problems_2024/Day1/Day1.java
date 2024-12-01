@@ -21,7 +21,7 @@ public class Day1 {
 
 
         lines.forEach(line -> {
-            String[] split = line.split("   ");
+            String[] split = line.split(" {3}");
             leftList.add(Integer.parseInt(split[0]));
             rightList.add(Integer.parseInt(split[1]));
                 }
