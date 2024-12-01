@@ -1,4 +1,4 @@
-package com.ansari.haseeb.problems.Day1;
+package com.ansari.haseeb.problems_2024.Day1;
 
 import com.ansari.haseeb.Utils.StringUtil;
 
@@ -9,7 +9,7 @@ public class Day1 {
 
     public static void main(String[] args) throws IOException {
 
-        List<String> lines = StringUtil.readLinesFromFile("src/main/java/com/ansari/haseeb/problems/Day1/input.txt");
+        List<String> lines = StringUtil.readLinesFromFile("src/main/java/com/ansari/haseeb/problems_2024/Day1/input.txt");
 
         /*
         Day 1 Part 1
