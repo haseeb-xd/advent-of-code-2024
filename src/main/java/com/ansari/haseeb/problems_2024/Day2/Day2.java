@@ -29,14 +29,36 @@ public class Day2 {
         }
         
         int problem1Count = 0;
+        int problem2Count=0;
 
         for (List <Integer> level : levels) {
                 if(isIncreasingOrDecreasing(level)) {
                     problem1Count++;
+
+                }
+                if (IsLevelRemovedSafe(level)) {
+                    problem2Count++;
                 }
         }
 
         System.out.println("Part 1 Answer: " + problem1Count);
+
+        System.out.println("Part 2 Answer: " + problem2Count);
+
+    }
+
+    // not an optimal solution tho :3
+    private static boolean IsLevelRemovedSafe(List<Integer> level) {
+        for (int i = 0; i < level.size(); i++) {
+            List<Integer> temp = new ArrayList<>(level);
+            temp.remove(i);
+            if (isIncreasingOrDecreasing(temp)) {
+                return true;
+            }
+
+        }
+
+        return false;
 
     }
 
